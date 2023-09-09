@@ -1,3 +1,4 @@
+
 from __future__ import division
 from itertools import product
 import collections.abc
@@ -78,7 +79,8 @@ Parameters
         -----------
 
         diagrams : list of or singleton diagram, list of pairs. [(birth, death)]
-            Persistence diagrams to be converted to persistence images. It is assumed they are in (birth, death) format. Can input a list of diagrams or a single diagram.
+            Persistence diagrams to be converted to persistence images. It is assumed they are in (birth, death) format.
+            Can input a list of diagrams or a single diagram.
 
         """
         # if diagram is empty, return empty image

@@ -127,7 +127,7 @@ class PersistenceLandscaper(BaseEstimator, TransformerMixin):
         else:
             return result.values
 
-    def fit_transform(self, dgms):
-        self.fit(dgms=dgms)
-        vals = self.transform(dgms=dgms)
+    def fit_transform(self, dgms, **kwargs):
+        self.fit(dgms)
+        vals = self.transform(dgms)
         return vals
